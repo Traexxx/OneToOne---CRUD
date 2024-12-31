@@ -1,5 +1,5 @@
 
-# 🏥 Cadastro de Pessoas - Sistema de Cadastro de Pessoas
+# Cadastro de Pessoas - Sistema de Cadastro de Pessoas
 
 Este projeto é um sistema simples de cadastros, que utiliza **Java** com **Spring Boot** e **H2** como banco de dados em memória. Ele permite o cadastro e gerenciamento, armazenando suas informações como nome, idade e endereço. O sistema foi desenvolvido com uma interface web usando **Thymeleaf**, e utiliza **Lombok** para reduzir o código boilerplate.
 
@@ -8,22 +8,23 @@ Este projeto é um sistema simples de cadastros, que utiliza **Java** com **Spri
 - Persistência de dados em banco de dados em memória (H2).
 
 - Cadastro de pessoas com nome, idade, e endereço completo.
-<img src="/Assets/demo_cadastro.gif" alt="Cadastro de Pessoa" width="350">
+<img src="/Assets/demo_cadastro.gif" alt="Cadastro de Pessoa" width="550">
 
 
-- Listagem de pessoas cadastradas.
-
-- Atualização e remoção pessoas.
-<img src="/Assets/demo_atualizacao.gif" alt="Atualização de Pessoa" width="350">
 
 
-<img src="/Assets/demo_excluir.gif" alt="Remoção de Pessoa" width="350">
+- Atualização.
+<img src="/Assets/demo_atualizacao.gif" alt="Atualização de Pessoa" width="550">
+
+- Listagem de pessoas cadastradas e remoção de pessoas.
+
+<img src="/Assets/demo_excluir.gif" alt="Remoção de Pessoa" width="550">
 
 
 
 ## 📋 Diagrama de Classes
 
-<img src="/Assets/diagrama.png" alt="diagrama" width="400">
+<img src="/Assets/diagrama.png" alt="diagrama" width="600">
 
 
 
