@@ -8,22 +8,22 @@ Este projeto é um sistema simples de cadastros, que utiliza **Java** com **Spri
 - Persistência de dados em banco de dados em memória (H2).
 
 - Cadastro de pessoas com nome, idade, e endereço completo.
-<img src="/Assets/demo_cadastro.gif" alt="Cadastro de Pessoa" width="400">
+<img src="/Assets/demo_cadastro.mp4" alt="Cadastro de Pessoa" width="300">
 
 
 - Listagem de pessoas cadastradas.
 
 - Atualização e remoção pessoas.
-<img src="/Assets/demo_atualizacao.gif" alt="Atualização de Pessoa" width="400">
+<img src="/Assets/demo_atualizacao.mp4" alt="Atualização de Pessoa" width="300">
 
 
-<img src="/Assets/demo_excluir.gif" alt="Remoção de Pessoa" width="400">
+<img src="/Assets/demo_excluir.mp4" alt="Remoção de Pessoa" width="200">
 
 
 
 ## 📋 Diagrama de Classes
 
-<img src="/Assets/floxograma" alt="diagrama" width="400">
+<img src="/Assets/diagrama.png" alt="diagrama" width="400">
 
 
 
@@ -61,11 +61,66 @@ git clone https://github.com/Traexxx/OneToOne---CRUD.git
 Navegue até o diretório do projeto e execute os seguintes comandos para rodar a aplicação:
 
 ```bash
-cd OneToone
+cd onetoone
 mvn spring-boot:run
 ```
 
 O sistema estará disponível em `http://localhost:8080`.
+
+## Controlador - 
+
+``` Java
+PessoaController
+```
+Controlador responsável por gerenciar as operações CRUD para a entidade **Pessoa**.
+
+### Endpoints principais:
+- **`GET /`**: Lista todas as pessoas e exibe formulário de cadastro.
+- **`POST /`**: Cadastra uma nova pessoa.
+- **`PUT /atualizar/{id}`**: Atualiza dados de uma pessoa pelo ID.
+- **`DELETE /deletar/{id}`**: Remove uma pessoa pelo ID.
+
+### Dependências:
+- **`PessoaRepository`**: Interface para comunicação com o banco.
+- **`PessoaModel` e `EnderecoModel`**: Modelos representando pessoa e endereço.
+- **`AtulizarPessoa`**: DTO para atualização de dados.
+
+
+## Estrutura do Projeto
+    Projeto-SpringBoot/
+    │
+    ├── src/
+    │   ├── main/
+    │   │   ├── java/
+    │   │   │   ├── com/
+    │   │   │   │   ├── onetoone/
+    │   │   │   │   │   ├── controller/
+    │   │   │   │   │   │   └── PessoaController.java
+    │   │   │   │   │   ├── config/
+    │   │   │   │   │   │   └── WebConfig.java
+    │   │   │   │   │   ├── model/
+    │   │   │   │   │   │   ├── endereco/
+    │   │   │   │   │   │   │   ├── AtualizarEndereco.java
+    │   │   │   │   │   │   │   ├── DadosEndereco.java
+    │   │   │   │   │   │   │   ├── EnderecoModel.java
+    │   │   │   │   │   │   │   └── EnderecoRepository.java
+    │   │   │   │   │   └── pessoa/
+    │   │   │   │   │       ├── AtualizarPessoa.java
+    │   │   │   │   │       ├── DadosPessoa.java
+    │   │   │   │   │       ├── PessoaModel.java
+    │   │   │   │   │       └── PessoaRepository.java
+    │   │   │   └── resources/
+    │   │   │       ├── static/
+    │   │   │       │   ├── script.js
+    │   │   │       │   └── style.css
+    │   │   │       └── templates/
+    │   │   │           └── lista.html
+    │   │   │
+    │   └── test/
+    │       └── java/
+    │           └── com/
+    │               └── onetoone/
+    │                   └── PessoaControllerTest.java
 
 ## 💻 Interface Web
 
@@ -96,7 +151,3 @@ server.port= 8080
 ## 🤝 Contribuições
 
 Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir *issues* e *pull requests*.
-
-## 📄 Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
