@@ -8,16 +8,16 @@ Este projeto é um sistema simples de cadastros, que utiliza **Java** com **Spri
 - Persistência de dados em banco de dados em memória (H2).
 
 - Cadastro de pessoas com nome, idade, e endereço completo.
-<img src="/Assets/demo_cadastro.mp4" alt="Cadastro de Pessoa" width="300">
+<img src="/Assets/demo_cadastro.gif" alt="Cadastro de Pessoa" width="350">
 
 
 - Listagem de pessoas cadastradas.
 
 - Atualização e remoção pessoas.
-<img src="/Assets/demo_atualizacao.mp4" alt="Atualização de Pessoa" width="300">
+<img src="/Assets/demo_atualizacao.gif" alt="Atualização de Pessoa" width="350">
 
 
-<img src="/Assets/demo_excluir.mp4" alt="Remoção de Pessoa" width="200">
+<img src="/Assets/demo_excluir.gif" alt="Remoção de Pessoa" width="350">
 
 
 
